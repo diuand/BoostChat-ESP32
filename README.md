@@ -1,1 +1,1 @@
-# BoostChat-ESP32
+# ESP32-IoT-Boost
