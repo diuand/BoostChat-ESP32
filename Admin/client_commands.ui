@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Client_commands</class>
+ <widget class="QDialog" name="Client_commands">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>551</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QLabel" name="lb_slave_name">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>511</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>4</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>4</width>
+     <height>4</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>10</width>
+     <height>4</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(0, 0, 0);
+border: 2px solid ; 
+  border-radius: 15px;
+color: rgb(0, 0, 0);
+font-size: 16px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_start">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QPushButton {
+   color: rgb(253, 253, 253);
+background-color: rgb(0, 85, 0);
+border-radius:8px;
+}
+QPushButton:pressed {
+    background-color: rgb(0, 65, 0);
+    color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>START</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_stop">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>350</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+   background-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:pressed {
+    background-color: rgb(150, 0, 0);
+    color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QListWidget" name="chat_history">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>90</y>
+     <width>211</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">overflow:scroll;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>101</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Last message :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="lstConsole">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>100</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_manual">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color:rgb(117, 117, 117);
+color: rgb(255, 255, 255);
+border-radius:8px;
+padding: 8px 10px;
+
+}
+QPushButton:checked {
+   background-color:rgb(117, 161, 117);
+}
+
+QPushButton:checked:pressed {
+   background-color:rgb(117, 161, 117);
+}</string>
+   </property>
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_automat">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color:rgb(117, 117, 117);
+color: rgb(255, 255, 255);
+border-radius:8px;
+padding: 8px 10px;
+
+}
+QPushButton:checked {
+   background-color:rgb(117, 161, 117);
+}
+
+QPushButton:checked:pressed {
+   background-color:rgb(117, 161, 117);
+}</string>
+   </property>
+   <property name="text">
+    <string>Automat</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>250</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_a"/>
+  </widget>
+  <widget class="QPushButton" name="btn_status">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QPushButton {
+   color: rgb(253, 253, 253);
+background-color:rgb(117, 117, 117);
+border-radius:8px;
+}
+QPushButton:pressed {
+    background-color:rgb(90,90,90);
+    color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>STATUS</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
